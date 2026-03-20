@@ -1,0 +1,8 @@
+target/
+*.class
+*.jar
+!fp-hardware-emulator-jar-with-dependencies.jar
+.idea/
+*.iml
+.DS_Store
+*.log
