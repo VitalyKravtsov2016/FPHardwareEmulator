@@ -1,0 +1,180 @@
+/* Стили для эмулятора фискального регистратора */
+
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 12px;
+}
+
+/* Основная панель */
+.root-pane {
+    -fx-background-color: #f5f5f5;
+}
+
+/* Панель управления */
+.top-panel {
+    -fx-background-color: #e8e8e8;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 10px;
+}
+
+/* Кнопки */
+.button {
+    -fx-background-color: #4a90e2;
+    -fx-text-fill: white;
+    -fx-border-color: #357abd;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 8px 16px;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #357abd;
+}
+
+.button:pressed {
+    -fx-background-color: #2968a3;
+}
+
+.button:disabled {
+    -fx-background-color: #cccccc;
+    -fx-border-color: #999999;
+    -fx-text-fill: #666666;
+}
+
+/* Кнопка питания */
+.button.power-on {
+    -fx-background-color: #e74c3c;
+    -fx-border-color: #c0392b;
+}
+
+.button.power-on:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* Переключатели */
+.toggle-button {
+    -fx-background-color: #f8f8f8;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 6px 12px;
+}
+
+.toggle-button:selected {
+    -fx-background-color: #2ecc71;
+    -fx-border-color: #27ae60;
+    -fx-text-fill: white;
+}
+
+.toggle-button:hover {
+    -fx-background-color: #e8e8e8;
+}
+
+.toggle-button:selected:hover {
+    -fx-background-color: #27ae60;
+}
+
+/* Панель статуса */
+.status-panel {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 10px;
+}
+
+.status-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.status-value {
+    -fx-text-fill: #666666;
+}
+
+/* Окно чека */
+.receipt-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-font-family: "Courier New", monospace;
+    -fx-font-size: 11px;
+    -fx-text-fill: #000000;
+    -fx-wrap-text: true;
+}
+
+/* Область лога */
+.log-area {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-font-family: "Consolas", "Courier New", monospace;
+    -fx-font-size: 10px;
+    -fx-text-fill: #00ff00;
+}
+
+/* Заголовки */
+.title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.subtitle {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #34495e;
+}
+
+/* Сепараторы */
+.separator {
+    -fx-background-color: #cccccc;
+}
+
+/* Информационная панель */
+.info-panel {
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 8px;
+}
+
+.info-label {
+    -fx-font-weight: normal;
+    -fx-text-fill: #7f8c8d;
+}
+
+/* Статусные индикаторы */
+.status-ok {
+    -fx-text-fill: #27ae60;
+}
+
+.status-error {
+    -fx-text-fill: #e74c3c;
+}
+
+.status-warning {
+    -fx-text-fill: #f39c12;
+}
+
+.status-offline {
+    -fx-text-fill: #95a5a6;
+}
+
+/* Анимации */
+.button {
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.toggle-button {
+    -fx-transition: all 0.2s ease-in-out;
+}
